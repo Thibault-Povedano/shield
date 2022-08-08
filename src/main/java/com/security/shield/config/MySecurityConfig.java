@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
-
+        // ça fonctionne mais obligé de vider le cache entre chaque nouvelle connexion de Steve ou de Nick...
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
